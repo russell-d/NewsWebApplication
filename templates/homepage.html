@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="stylesheet" href="{{url_for('static',filename='styles/homestyle.css')}}"> 
+    </head>
+    
+    <body>
+        <nav>
+            <ul>
+              <li><a class="active" style="font-size:25px" href="/" >E S T NewsSearch</a></li>
+              <li><a  href="/SportsNews">Sports</a></li>
+              <li><a href="/TechnologyNews">Technology</a></li>
+              <li><a href="/EntertainmentNews">Entertainment</a></li>
+              <div class = "right">
+                <li><a href = "https://www.linkedin.com/in/russelldevera/">LinkedIn</a></li>
+                <li><a href = "https://github.com/russell-d">GitHub</a></li>
+              </div>
+            </ul>
+        </nav>
+        <div class = "top">
+            <span class = "box">
+                 Top Headline:  
+            </span>
+            <span class = "box-text">
+                <a href = "{{s_data['articles'][7]['url']}}" style="color:black; text-decoration: none;">
+                {{s_data['articles'][7]['title']}}</a>
+            </span> 
+        </div>
+
+        <div class = "layout">
+                <div class = "main">
+                    <div style = "width: 60%; float:left;">            
+                         <a href = "{{t_data['articles'][19]['url']}}">
+                         <img src = "{{t_data['articles'][19]['urlToImage']}}"></a> 
+                    </div>
+                    <div style = "width: 40%; float: right">
+                        <a href = "{{t_data['articles'][19]['url']}} " style="color:black; text-decoration: none;">
+                        <h2>{{t_data['articles'][19]['title']}}</h2>
+                        <p class = "description">{{t_data['articles'][19]['description']}}</p></a>
+                        <p class = "author">Author: {{t_data['articles'][19]['author']}}</p>
+                    </div>
+                </div>      
+
+                <div class = "second" style="background-image: url({{e_data['articles'][5]['urlToImage']}}); background-size: 100% 100%;">      
+                    <a href = "{{e_data['articles'][5]['url']}}" target="_blank" style="color:white; text-decoration: none;">  
+                    <div id="bottom">
+                        <h3>{{e_data['articles'][5]['title']}}</h3></a>
+                        <p class = "author">{{e_data['articles'][5]['author']}}</p>
+                    </div></a>
+                    </div>          
+                </div>
+
+                 <div class = "featured">
+                    <div class = "featured-art" style="background-image: url({{s_data['articles'][15]['urlToImage']}}); background-size: 100% 100%;">      
+                        <a href = "{{s_data['articles'][15]['url']}}" target="_blank" style="color:white; text-decoration: none;">  
+                        <div id="featured-bottom">
+                            <h3>{{s_data['articles'][15]['title']}}</h3></a>
+                        </div></a>
+                    </div>          
+                    <div class = "featured-art" style="background-image: url({{t_data['articles'][11]['urlToImage']}}); background-size: 100% 100%;">      
+                        <a href = "{{t_data['articles'][11]['url']}}" target="_blank" style="color:white; text-decoration: none;">  
+                        <div id="featured-bottom">
+                            <h3>{{t_data['articles'][11]['title']}}</h3></a>
+                        </div></a>
+                    </div>          
+                    <div class = "featured-art" style="background-image: url({{e_data['articles'][14]['urlToImage']}}); background-size: 100% 100%;">      
+                        <a href = "{{e_data['articles'][14]['url']}}" target="_blank" style="color:white; text-decoration: none;">  
+                        <div id="featured-bottom">
+                            <h3>{{e_data['articles'][14]['title']}}</h3></a>  
+                        </div></a>
+                    </div>          
+                    <div class = "featured-art" style="background-image: url({{s_data['articles'][19]['urlToImage']}}); background-size: 100% 100%;">      
+                        <a href = "{{s_data['articles'][19]['url']}}" target="_blank" style="color:white; text-decoration: none;">  
+                        <div id="featured-bottom">
+                            <h3>{{s_data['articles'][19]['title']}}</h3></a>
+                            </div></a>
+                        </div>          
+                    </div>
+                </div>
+            </div>               
+    </body>
+</html>

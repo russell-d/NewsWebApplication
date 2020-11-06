@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="stylesheet" href="{{url_for('static',filename='styles/sportstyle.css')}}">
+    </head>
+    <body>
+         <nav>
+            <ul>
+              <li><a style="font-size:25px" href="/" >E S T NewsSearch</a></li>
+              <li><a class="active" href="/SportsNews">Sports</a></li>
+              <li><a href="/TechnologyNews">Technology</a></li>
+              <li><a href="/EntertainmentNews">Entertainment</a></li>
+              <div class = "right">
+                <li><a href = "https://www.linkedin.com/in/russelldevera/">LinkedIn</a></li>
+                <li><a href = "https://github.com/russell-d">GitHub</a></li>
+              </div>
+            </ul>
+        </nav>
+      
+        <div class = "top">
+            <span class = "box">
+                 Top Headline:  
+            </span>
+            <span class = "box-text">
+                <a href = "{{top_s_data['articles'][0]['url']}}" style="color:black; text-decoration: none;">
+                {{top_s_data['articles'][0]['title']}}</a>
+            </span> 
+        </div>
+
+        <div class = "layout">
+                <div class = "main">
+                    <div style = "width: 60%; float:left;">            
+                         <a href = "{{s_data['articles'][0]['url']}}">
+                         <img src = "{{s_data['articles'][0]['urlToImage']}}"></a> 
+                    </div>
+                    <div style = "width: 40%; float: right">
+                        <a href = "{{s_data['articles'][0]['url']}} " style="color:black; text-decoration: none;">
+                        <h2>{{s_data['articles'][0]['title']}}</h2>
+                        <p class = "description">{{s_data['articles'][0]['description']}}</p></a>
+                        <p class = "author">Author: {{s_data['articles'][0]['author']}}</p>
+                    </div>
+                </div>
+                
+                <div class = "second" style="background-image: url({{s_data['articles'][1]['urlToImage']}}); background-size: 100% 100%;">
+                    <a href = "{{s_data['articles'][1]['url']}}" target="_blank" style="color:white; text-decoration: none;">
+                    <div id="bottom">
+                        <h3>{{s_data['articles'][1]['title']}}</h3></a>
+                        <p class = "author">{{s_data['articles'][1]['author']}}</p>
+                    </div></a>
+                </div>
+                
+                {% for article in s_data["articles"] %}
+                   {% if article != s_data["articles"][0] and article != s_data["articles"][1]%}
+                    <div class = "art">      
+                                <a href="{{article['url']}}" target="_blank" style="color:black; text-decoration: none;"> 
+                                <img src = "{{article['urlToImage']}}">     
+                                <h3>{{article['title']}}</h3></a>
+                                <p class = "author">{{article['author']}}</p>
+                                <!-- <div id = "description_div">
+                                    <p class = "description">{{article['description']}}</p>
+                                </div>    #was going to be pop out div for description.-->
+                    </div>
+                    {% endif %} 
+                {% endfor %}
+            </div>
+    </body>
+</html>
