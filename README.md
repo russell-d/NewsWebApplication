@@ -29,9 +29,10 @@ This web application gets its news articles from News API and displays articles 
 
 ## Launching Web App
 To launch this application **locally**, you need to have Flask, Python, and the NewsAPI installed. Then you can run the init. py file. This should give give you a local URL to use to view it.  Otherwise, this application is already launched on a Linux server using Ubuntu.
+
 ***IMPORTANT: API KEY IS NOT INSIDE PYTHON FILE. MUST NEED OWN API KEY.***
 
-**For Capital One: if web page is down, you may run locally. (python file needs API key)** 
+**For Capital One: if web page is down, you may run locally. (python file needs API key) or contact: rdevera@csumb.edu** 
 
 ```
 * Serving Flask app "__init__" (lazy loading)
