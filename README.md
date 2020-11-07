@@ -28,9 +28,22 @@ This web application gets its news articles from News API and displays articles 
  - [Ubuntu](https://ubuntu.com/)
 
 ## Launching Web App
-To launch this application **locally**, you need to have Flask, Python, and the NewsAPI installed. Then you can run the init. py file. This should give give you a local URL to use to view it.  Otherwise, this application is already launched on a Linux server using Ubuntu. **IMPORTANT: API KEY IS NOT INSIDE PYTHON FILE. MUST NEED OWN API KEY.** 
-**For Capital One: if web page is down, you may run locally. (python file needs API key) **
+To launch this application **locally**, you need to have Flask, Python, and the NewsAPI installed. Then you can run the init. py file. This should give give you a local URL to use to view it.  Otherwise, this application is already launched on a Linux server using Ubuntu.
+***IMPORTANT: API KEY IS NOT INSIDE PYTHON FILE. MUST NEED OWN API KEY.***
 
+**For Capital One: if web page is down, you may run locally. (python file needs API key)** 
+
+```
+* Serving Flask app "__init__" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 766-717-937
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+```
 ## How It Works
 
 1. Get JSON file from News API python library. Depending on the category, passthrough the corresponding data.
