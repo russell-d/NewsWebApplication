@@ -101,6 +101,7 @@ For each category page, I included a **Top Headline article** to showcase a top 
  **email:** rdevera@csumb.edu
    --------[LinkedIn](https://www.linkedin.com/in/russelldevera/)
  --------[GitHub](https://github.com/russell-d)
+ I would love feedback on the project and README. (This is my first README, so I'd like to see how well I made it!) Thank you so much for this opportunity, Capital One!
 
 
 
