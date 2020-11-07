@@ -45,7 +45,7 @@ To launch this application **locally**, you need to have Flask, Python, and the 
  * Debugger PIN: 766-717-937
  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
 ```
-**127.0.0.1:5000/ is the URL for the local web app to run. Press it and will open up in web browser to be viewed.**
+***127.0.0.1:5000 is the URL for the local web app to run. Press it and will open up in web browser to be viewed.***
 ## How It Works
 
 1. Get JSON file from News API python library. Depending on the category, passthrough the corresponding data.
