@@ -28,7 +28,8 @@ This web application gets its news articles from News API and displays articles 
  - [Ubuntu](https://ubuntu.com/)
 
 ## Launching Web App
-To launch this application **locally**, you need to have Flask, Python, and the NewsAPI installed. Then you can run the init. py file. This should give give you a local URL to use to view it. Otherwise, this application is already launched on a Linux server using Ubuntu. 
+To launch this application **locally**, you need to have Flask, Python, and the NewsAPI installed. Then you can run the init. py file. This should give give you a local URL to use to view it.  Otherwise, this application is already launched on a Linux server using Ubuntu. **IMPORTANT: API KEY IS NOT INSIDE PYTHON FILE. MUST NEED OWN API KEY.** 
+**For Capital One: if web page is down, you may run locally. (python file needs API key) **
 
 ## How It Works
 
@@ -65,7 +66,7 @@ This code gets all news articles pertaining to the category: technology.
 This is the base of the project with articles shown in a grid. I added a lot more features in the [features](#features) section!
 
   ## Deploying Web App
-To deploy this application, I used a Linux server running Ubuntu. I used [Linode](https://cloud.linode.com/linodes) to host my server. I had to use Apache and WSGI in order to deploy the Flask Python application.
+To deploy this application, I used a Linux server running Ubuntu. I used [Linode](https://cloud.linode.com/linodes) to host my server. I had to use Apache and WSGI in order to deploy the Flask Python application. 
 
 ## Features
 **Technical features** would include the **Flask for loop** to go through all the articles within the JSON file. This was a very easy and simple way to display all the articles given. 
